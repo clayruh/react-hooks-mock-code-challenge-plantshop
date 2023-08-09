@@ -1,6 +1,9 @@
 import React from "react";
 
 function Search() {
+
+  // as the change happens in search, I want the filter to .contain() the string that matches the plant.name
+
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>

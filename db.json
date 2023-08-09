@@ -41,6 +41,24 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "fig tree",
+      "image": "https://www.southernliving.com/thmb/qefVJRAtpv4hQ6vceu7r9rJSusg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/papa-john-fig-x-8bdcebafc6e04f329120581e57c92771.jpg",
+      "price": "10000",
+      "id": 10
+    },
+    {
+      "name": "magnolia tree",
+      "image": "https://www.brighterblooms.com/cdn/shop/products/Janr_Magnolia_BB_600x600_e6d5fbe4-eaca-4787-8696-ceabd25ecfab_grande.jpg?v=1629492862",
+      "price": "4000000",
+      "id": 11
+    },
+    {
+      "name": "sunflower",
+      "image": "https://www.oregonlive.com/resizer/6Ho49fSV7-8J6qLgtH6l-xWQ7jc=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.oregonlive.com/home/olive-media/width2048/img/hg_impact/photo/sunflower-e45b3c14720a9781.jpg",
+      "price": "10",
+      "id": 12
     }
   ]
 }
