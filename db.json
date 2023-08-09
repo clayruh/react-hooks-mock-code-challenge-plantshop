@@ -13,18 +13,6 @@
       "price": 25.98
     },
     {
-      "id": 3,
-      "name": "Pilea peperomioides",
-      "image": "./images/pilea.jpg",
-      "price": 5.99
-    },
-    {
-      "id": 4,
-      "name": "Pothos",
-      "image": "./images/pothos.jpg",
-      "price": 12.11
-    },
-    {
       "id": 5,
       "name": "Jade",
       "image": "./images/jade.jpg",
@@ -53,12 +41,6 @@
       "image": "https://www.brighterblooms.com/cdn/shop/products/Janr_Magnolia_BB_600x600_e6d5fbe4-eaca-4787-8696-ceabd25ecfab_grande.jpg?v=1629492862",
       "price": "4000000",
       "id": 11
-    },
-    {
-      "name": "sunflower",
-      "image": "https://www.oregonlive.com/resizer/6Ho49fSV7-8J6qLgtH6l-xWQ7jc=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/image.oregonlive.com/home/olive-media/width2048/img/hg_impact/photo/sunflower-e45b3c14720a9781.jpg",
-      "price": "10",
-      "id": 12
     }
   ]
 }

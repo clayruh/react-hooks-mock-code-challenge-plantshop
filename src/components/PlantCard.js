@@ -2,10 +2,18 @@ import React, {useState} from "react";
 
 function PlantCard({plant}) {
 
-  const [sold, setSold] = useState(false)
+  const [inStock, setInStock] = useState(true)
 
   function handleStock() {
-    setSold(!sold)
+    setInStock(!inStock)
+  }
+
+  // creating a DELETE doesn't require the state to be updated, BUT we do need to write a function where the data is coming through to plantArray.filter( plant => plant.id !== deletedPlant.id ) aka filter for everything BUT the object that was clicked on
+  function deletePlant() {
+    const OPTIONS = { method: 'DELETE' }
+    fetch(`http://localhost:3000/plants/${plant.id}`, OPTIONS)
+    .then(res => res.json())
+    .then(plant => console.log(plant))
   }
 
   return (
@@ -13,11 +21,13 @@ function PlantCard({plant}) {
       <img src={plant.image} alt={plant.name} />
       <h4>{plant.name}</h4>
       <p>Price: {plant.price}</p>
-      {true ? (
-        <button onClick={handleStock} className="primary">{sold ? "Sold Out" : "In Stock" }</button> // Create a ternary here that toggles between "In Stock" : "Sold Out" depending on the state. If I wanted it to persist, I'd add a PATCH into the handleStock() right?
+      {inStock ? (
+        <button onClick={handleStock} className="primary">In Stock</button> // Create a ternary here that toggles between "In Stock" : "Sold Out" depending on the state. If I wanted it to persist, I'd add a PATCH into the handleStock() right?
       ) : (
-        <button>Out of Stock</button>
+        <button onClick={handleStock}>Out of Stock</button>
       )}
+      <br/>
+      <button onClick={deletePlant} style={{background: 'red', color: 'white'}}>Throw Away</button>
     </li>
   );
 }
